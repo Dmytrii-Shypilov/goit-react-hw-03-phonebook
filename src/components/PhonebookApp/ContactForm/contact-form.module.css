@@ -1,0 +1,21 @@
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.label {
+  display: block;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: block;
+  transform: translateX(150%);
+  cursor: pointer;
+}

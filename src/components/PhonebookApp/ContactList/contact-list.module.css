@@ -1,0 +1,22 @@
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+
+  border: 1px solid grey;
+
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.btn {
+  margin-left: 8px;
+  cursor: pointer;
+}

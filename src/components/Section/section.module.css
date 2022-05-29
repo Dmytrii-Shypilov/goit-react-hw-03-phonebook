@@ -1,0 +1,16 @@
+.section {
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  text-align: center;
+
+  border: 2px dashed grey;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0;
+}

@@ -1,0 +1,17 @@
+.bookSection {
+  width: 350px;
+  background-color: azure;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 15px;
+
+  border: 2px solid grey;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}

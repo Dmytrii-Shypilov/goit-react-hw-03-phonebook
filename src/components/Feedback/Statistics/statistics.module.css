@@ -1,0 +1,28 @@
+.statistics {
+  margin-top: 20px;
+}
+
+.option {
+  display: flex;
+  width: 300px;
+  height: 25px;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.result {
+  font-weight: 700;
+  color: red;
+  margin-left: 5px;
+}
