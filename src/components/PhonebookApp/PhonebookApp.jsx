@@ -17,21 +17,18 @@ class PhonebookApp extends Component {
   };
 
   componentDidMount() {
-    if (this.getLocalStorageData()) {
-      const storedData = this.getLocalStorageData();
+    const storedData = JSON.parse(localStorage.getItem('contacts'));
+    if (storedData) {
       this.setState({ contacts: [...storedData] });
     }
   }
 
   componentDidUpdate(prevProps, prevState) {
     const { contacts } = this.state;
-    if (prevState)
+    if (prevState.contacts !== contacts)
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }
 
-  getLocalStorageData = () => {
-    return JSON.parse(localStorage.getItem('contacts'));
-  };
 
   addContact = newData => {
     const { name, number } = newData;
