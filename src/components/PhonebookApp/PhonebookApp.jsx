@@ -23,7 +23,7 @@ class PhonebookApp extends Component {
     }
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate() {
     const { contacts } = this.state;
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }
