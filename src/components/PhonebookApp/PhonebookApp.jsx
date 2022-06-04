@@ -18,16 +18,17 @@ class PhonebookApp extends Component {
 
   componentDidMount() {
     const storedData = JSON.parse(localStorage.getItem('contacts'));
-    if (storedData) {
+    if (storedData.length) {
       this.setState({ contacts: [...storedData] });
     }
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
     const { contacts } = this.state;
-    localStorage.setItem('contacts', JSON.stringify(contacts));
+    if (prevState.contacts.length !== contacts.length) {
+      localStorage.setItem('contacts', JSON.stringify(contacts));
+    }
   }
-
 
   addContact = newData => {
     const { name, number } = newData;
